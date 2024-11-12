@@ -1,0 +1,116 @@
+/* style.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: #fff; /* Adjust based on Canva colors */
+    background-image: url('static-bg.jpg'); /* Replace with Canva background image if possible */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+/* Container for scrollable image with overflow hidden */
+.scrollable-image-container {
+    position: relative;
+    min-height: calc(100vh - 100px);
+    overflow: hidden; /* Hide anything outside this container */
+    width: 100%; /* Full width */
+}
+
+/* Scrollable SVG image */
+#scrollable-bg {
+    position: absolute;
+    top: 10vh; /* Start near the top of the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100%; /* Adjust width to make it responsive */
+    max-width: 2500px; /* Max size for larger screens */
+    opacity: 1.0; /* Optional transparency */
+    z-index: -1; /* Behind other content */
+    height: auto; /* Maintain aspect ratio */
+    pointer-events: none; /* Ensures no interference with other elements */
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+}
+
+/* Flexbox to align image and text horizontally */
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between image and text */
+    padding: 10px;
+}
+
+/* Style the image */
+.header-image {
+    width: 70%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the text */
+.header-text {
+    font-size: 2.5em;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    color: #fff; /* Adjust color as needed */
+}
+/* Image between main and footer */
+.between-main-footer {
+    display: block;
+    width: 100%; /* Make it full width, or adjust as needed */
+    max-width: 90vw; /* Optional: Limit max width */
+    margin: 20px auto; 
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+    color: #fff; /* Primary color from Canva */
+}
+
+main {
+    flex: 1;
+    padding: 100px;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #fff; /* Secondary color from Canva */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.9em;
+}
+
+#sponsors-image {
+    max-width: 90vw; /* Adjust size as needed */
+    margin-top: 10px;
+}
+
+h1, h2, p {
+    font-family: 'Raleway', sans-serif; /* Apply Raleway to headings and paragraphs */
+}
+
