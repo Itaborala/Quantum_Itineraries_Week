@@ -15,7 +15,7 @@
         <img src="logo1.png" alt="Logo" class="header-image">
         <p>November 27-29, 2024 | ARTos Cultural and Research House</p>
     </header>
-        <img src="scrollable-bg.svg" alt="Scrollable Background" id="scrollable-bg">
+        <img src="scrollable-bg.png" alt="Scrollable Background" id="scrollable-bg">
 
     <main>
         <section id="about">
@@ -192,7 +192,7 @@
     window.addEventListener('scroll', function() {
         const scrollableBg = document.getElementById('scrollable-bg');
         const scrolledAmount = window.scrollY; // Get the amount of scroll in pixels
-        scrollableBg.style.transform = `translate(-50%, ${scrolledAmount * +0.6}px)`;
+        scrollableBg.style.transform = `translate(-50%, ${scrolledAmount * +0.5}px)`;
     });
 </script>
 
