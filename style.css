@@ -3,6 +3,7 @@
 body {
     display: flex;
     flex-direction: column;
+    text-align: justify;
     min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     color: #fff; /* Adjust based on Canva colors */
@@ -82,7 +83,7 @@ h1 {
 
 main {
     flex: 1;
-    padding: 100px;
+    padding: 5vw;
     max-width: 800px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
@@ -114,3 +115,6 @@ h1, h2, p {
     font-family: 'Raleway', sans-serif; /* Apply Raleway to headings and paragraphs */
 }
 
+a {
+    color: #cb0; /* Adjust link color */
+}
